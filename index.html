@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Matemáticos</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Laboratorio de Ejercicios Matemáticos</h1>
+
+        <!-- 1. ECUACIÓN CUADRÁTICA -->
+        <div class="card">
+            <h2>1. Ecuación Cuadrática</h2>
+            <p>Calcula las raíces de ax² + bx + c = 0 mediante D = b² - 4ac.</p>
+
+            <form id="formQuad">
+                <div class="form-group">
+                    <label>Coeficiente a:</label>
+                    <input type="number" id="q_a" step="any" required placeholder="Introduce a">
+                </div>
+                <div class="form-group">
+                    <label>Coeficiente b:</label>
+                    <input type="number" id="q_b" step="any" required placeholder="Introduce b">
+                </div>
+                <div class="form-group">
+                    <label>Coeficiente c:</label>
+                    <input type="number" id="q_c" step="any" required placeholder="Introduce c">
+                </div>
+                <button type="submit">Calcular Raíces</button>
+            </form>
+            <div id="resQuad" class="resultado"></div>
+        </div>
+
+        <!-- 2. ESTIMACIÓN DE PI -->
+        <div class="card">
+            <h2>2. Estimación de Pi</h2>
+            <p>Calcula Pi mediante la serie: sqrt(6 * sumatoria(1 / n²)).</p>
+
+            <form id="formPi">
+                <div class="form-group">
+                    <label>Número de términos (n):</label>
+                    <input type="number" id="pi_n" min="1" required placeholder="Ej: 10000">
+                </div>
+                <button type="submit">Estimar Pi</button>
+            </form>
+            <div id="resPi" class="resultado"></div>
+        </div>
+
+        <!-- 3. REPARTO DE CAMELLOS -->
+        <div class="card">
+            <h2>3. El Reparto de los Camellos</h2>
+            <p><strong>Descripción:</strong> Beremiz ayuda a repartir 35 camellos entre 3 hermanos agregando 1 camello prestado.</p>
+
+            <form id="formCamellos">
+                <div class="form-group">
+                    <label>Total de camellos:</label>
+                    <input type="number" id="c_total" min="1" required placeholder="Ej: 35">
+                </div>
+                <button type="submit">Resolver Reparto</button>
+            </form>
+            <div id="resCamellos" class="resultado"></div>
+        </div>
+
+        <!-- 4. PAGO DE LOS PANES -->
+        <div class="card">
+            <h2>4. El Pago de los Panes</h2>
+            <p><strong>Descripción:</strong> Dos viajeros comparten sus panes con un tercero, quien paga 8 monedas de oro.</p>
+
+            <form id="formPanes">
+                <div class="form-group">
+                    <label>Panes Viajero 1:</label>
+                    <input type="number" id="p_1" min="0" required placeholder="Ej: 7">
+                </div>
+                <div class="form-group">
+                    <label>Panes Viajero 2:</label>
+                    <input type="number" id="p_2" min="0" required placeholder="Ej: 5">
+                </div>
+                <div class="form-group">
+                    <label>Monedas pagadas:</label>
+                    <input type="number" id="p_mon" min="0" required placeholder="Ej: 8">
+                </div>
+                <button type="submit">Calcular Pago Justo</button>
+            </form>
+            <div id="resPanes" class="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

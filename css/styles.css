@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor vertical */
+.container {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Tarjetas sencillas alineadas verticalmente */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #2563eb;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #475569;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.resultado {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: none;
+    line-height: 1.4;
+}
+
+.resultado.activo {
+    display: block;
+}
